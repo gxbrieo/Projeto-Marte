@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: Open Sans;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 67%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 7;
+    left: 16.70%;
+}
+
+header h1 {
+    font-size: 56px;
+    font-family: Krylon;
+    color: #fff;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li {
+    margin-left: 50px;
+    font-family: Krylon;
+    font-size: 28px;
+    color: #fff9eb;
+}
+
+.hero {
+    width: 100%;
+    height: 1080px;
+    background: url("/assets/hero1_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.hero .hero-texts {
+    width: 67%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-texts h2 {
+    font-size: 74px;
+    font-family: Krylon;
+    color: #fff;
+}
+
+.hero .hero-texts h2::after {
+    content: " Vermelho";
+    color: #ff756a;
+}
+
+.hero .hero-texts p {
+    font-size: 24px;
+    color: #ffffffc0;
+    font-family: Open Sans;
+    font-weight: lighter;
+    width: 620px;
+    margin: 25px 0px;
+}
+
+.hero .hero-texts button {
+    width: 300px;
+    height: 70px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 28px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(90deg, #faa788, #78493f);
+}
+
+.intro {
+    transform: translateY(-158px);
+    width: 100%;
+    height: 1080px;
+    background-color: #343030;
+    z-index: 1;
+    display: flex;
+}
+
+.intro .intro-texts {
+    width: 67%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.intro .intro-texts .metricas h2 {
+    font-size: 172px;
+    background: -webkit-linear-gradient(60deg, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro .intro-texts .metricas p {
+    font-size: 45px;
+    color: #fff;
+    font-weight: lighter;
+    transform: translateY(-45px);
+}
+
+.intro .intro-texts .border {
+    font-size: 28px;
+    color: #fff;
+    font-weight: lighter;
+    width: 60%;
+    border-left: 10px solid #f49217;
+    padding-left: 20px;
+}
+
+.luas {
+    width: 100%;
+    height: 1080px;
+    background: url("/assets/luas_bg.png") no-repeat;
+    transform: translateY(-158px);
+}
+
+.luas-text {
+    width: 67%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 150px;
+}
+
+.luas-text .luastext {
+    display: flex;
+    align-items: center;
+}
+
+.luas-text h2 {
+    font-size: 280px;
+    font-family: Krylon;
+    color: #fff;
+}
+
+.luas-text .luastext h3 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff756a;
+}
+
+.luas-text .luastext p {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #f69f73;
+    width: 100%;
+    height: 158px;
+}
